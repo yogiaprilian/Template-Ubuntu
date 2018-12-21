@@ -42,22 +42,7 @@
       }
     }
   },
-  "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
-    "imagePublisher": "Canonical",
-    "imageOffer": "UbuntuServer",
-    "nicName": "myVMNic",
-    "addressPrefix": "10.0.0.0/16",
-    "subnetName": "Subnet",
-    "subnetPrefix": "10.0.0.0/24",
-    "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "myPublicIP",
-    "publicIPAddressType": "Dynamic",
-    "vmName": "MyUbuntuVM",
-    "vmSize": "Standard_A1",
-    "virtualNetworkName": "MyVNET",
-    "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]"
-  },
+  
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
